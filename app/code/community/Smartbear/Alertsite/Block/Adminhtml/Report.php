@@ -18,6 +18,22 @@ class Smartbear_Alertsite_Block_Adminhtml_Report extends Mage_Adminhtml_Block_Te
         $api->setRequestIp(Mage::helper('core/http')->getRemoteAddr());
         $api->login();
 
+        /**
+        var opts = {
+        customer  : '4553',
+        user      : "cbrinegar@alertsite.com",
+        session   : "2abccb38d10850d1",
+        container : "#scatter_plot",
+        device    : '160285',
+        timezone  : '-5'
+        };
+
+        //this will render the scatter graph for the
+        var scatter_plot = new sb_external_Scatter(opts);
+
+        opts.container = "#benchmark_plot";
+        var benchmark_plot = new sb_external_Benchmark(opts);
+         */
         $options->customer = intval(str_replace('C', '', $api->getCustomerId())) - 10000;
         $options->session = $api->getSessionId();
 

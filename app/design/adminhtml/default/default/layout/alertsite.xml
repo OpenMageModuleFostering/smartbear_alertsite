@@ -18,8 +18,6 @@
     <adminhtml_alertsite_create>
         <reference name="head">
             <action method="addCss"><name>smartbear/alertsite/css/alertsite.css</name></action>
-            <action method="addJs"><name>smartbear/alertsite/jquery.min.js</name></action>
-            <action method="addJs"><name>smartbear/alertsite/alertsite.js</name></action>
         </reference>
         <reference name="content">
             <block type="alertsite/adminhtml_create" name="smartbear.create" template="alertsite/create.phtml">
@@ -34,8 +32,6 @@
     <adminhtml_alertsite_advance>
         <reference name="head">
             <action method="addCss"><name>smartbear/alertsite/css/alertsite.css</name></action>
-            <action method="addJs"><name>smartbear/alertsite/jquery.min.js</name></action>
-            <action method="addJs"><name>smartbear/alertsite/alertsite.js</name></action>
         </reference>
         <reference name="content">
             <block type="alertsite/adminhtml_advance" name="smartbear.advance" template="alertsite/advance.phtml">
@@ -56,7 +52,6 @@
     <adminhtml_alertsite_scatterplot>
         <reference name="head">
             <action method="addCss"><name>smartbear/alertsite/css/alertsite.css</name></action>
-            <action method="addJs"><name>smartbear/alertsite/alertsite.js</name></action>
         </reference>
         <reference name="content">
             <block type="alertsite/adminhtml_report" name="smartbear.create" template="alertsite/scatterplot.phtml">
@@ -70,7 +65,6 @@
     <adminhtml_alertsite_benchmark>
         <reference name="head">
             <action method="addCss"><name>smartbear/alertsite/css/alertsite.css</name></action>
-            <action method="addJs"><name>smartbear/alertsite/alertsite.js</name></action>
         </reference>
         <reference name="content">
             <block type="alertsite/adminhtml_report" name="smartbear.create" template="alertsite/benchmark.phtml">
